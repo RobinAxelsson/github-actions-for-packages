@@ -1,12 +1,12 @@
 name: Docker CD
 
 on:
-  push:
-    branches: "**"
+  push
+
 jobs:
   Build-and-Push-Docker-Image:
     runs-on: ubuntu-latest
-    needs: test
+    # needs: test
     name: Docker Build, Tag, Push
 
     steps:
